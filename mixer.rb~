@@ -42,7 +42,7 @@ def mixer(string)
 
 		z=j.split("|")
 		tmp_min,tmp_max = max_min(z)
-		s2[i]=z[rand(z.size())]      #random synonimu
+		s2[i]=z[rand(z.size())]      #wybrnaie losowego odcinka,
 		dl=dl+s2[i].size
 		dl_max=dl_max+tmp_max
 		dl_min=dl_min+tmp_min
