@@ -1,8 +1,10 @@
-1342111968
+1342117340
 Application	C:/Sites/railsinstaller_demo/config/application.rb	  class Application 
 ApplicationController	C:/Sites/railsinstaller_demo/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Sites/railsinstaller_demo/app/helpers/application_helper.rb	module ApplicationHelper
 BrowsingTest	C:/Sites/railsinstaller_demo/test/performance/browsing_test.rb	class BrowsingTest 
+Greeter	C:/Sites/railsinstaller_demo/moj_plik.rb	 class Greeter
+MegaGreeter	C:/Sites/railsinstaller_demo/ruby.rb	class MegaGreeter
 RailsinstallerDemo	C:/Sites/railsinstaller_demo/config/application.rb	module RailsinstallerDemo
 TestCase	C:/Sites/railsinstaller_demo/test/test_helper.rb	class ActiveSupport::TestCase
 WelcomeController	C:/Sites/railsinstaller_demo/app/controllers/welcome_controller.rb	class WelcomeController 
@@ -10,4 +12,11 @@ WelcomeControllerTest	C:/Sites/railsinstaller_demo/test/functional/welcome_contr
 WelcomeHelper	C:/Sites/railsinstaller_demo/app/helpers/welcome_helper.rb	module WelcomeHelper
 WelcomeHelperTest	C:/Sites/railsinstaller_demo/test/unit/helpers/welcome_helper_test.rb	class WelcomeHelperTest 
 index	C:/Sites/railsinstaller_demo/app/controllers/welcome_controller.rb	  def index
+initialize	C:/Sites/railsinstaller_demo/ruby.rb	  def initialize(names = "World")
+initialize	C:/Sites/railsinstaller_demo/moj_plik.rb	   def initialize(name = "World")
+names	C:/Sites/railsinstaller_demo/ruby.rb	  attr_accessor :names
+say_bye	C:/Sites/railsinstaller_demo/ruby.rb	  def say_bye
+say_bye	C:/Sites/railsinstaller_demo/moj_plik.rb	def say_bye
+say_hi	C:/Sites/railsinstaller_demo/ruby.rb	  def say_hi
+say_hi	C:/Sites/railsinstaller_demo/moj_plik.rb	  def say_hi
 test_homepage	C:/Sites/railsinstaller_demo/test/performance/browsing_test.rb	  def test_homepage

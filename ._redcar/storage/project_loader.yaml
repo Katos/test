@@ -1,3 +1,16 @@
 --- 
-open_files: []
-
+open_files: 
+  - config/routes.rb
+  - app/controllers/welcome_controller.rb
+  - app/views/welcome/index.html.erb
+  - Gemfile
+  - Gemfile.lock
+  - app/controllers/application_controller.rb
+  - app/views/layouts/application.html.erb
+  - config/application.rb
+  - config/boot.rb
+  - config/database.yml
+  - config/environment.rb
+  - test/test_helper.rb
+  - ruby.rb
+  - moj_plik.rb

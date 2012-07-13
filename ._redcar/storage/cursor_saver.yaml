@@ -1,4 +1,45 @@
 --- 
-cursor_positions: []
-
+cursor_positions: 
+  - :path: config/routes.rb
+    :cursor_offset: 1392
+    :timestamp: 2012-07-12 14:10:58.488000 +02:00
+  - :path: app/controllers/welcome_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2012-07-12 14:10:58.487000 +02:00
+  - :path: app/views/welcome/index.html.erb
+    :cursor_offset: 368
+    :timestamp: 2012-07-12 19:25:32.714000 +02:00
+  - :path: Gemfile
+    :cursor_offset: 190
+    :timestamp: 2012-07-12 18:50:51.426000 +02:00
+  - :path: Gemfile.lock
+    :cursor_offset: 2352
+    :timestamp: 2012-07-12 18:52:56.297000 +02:00
+  - :path: app/controllers/application_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2012-07-12 13:37:41.703000 +02:00
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 236
+    :timestamp: 2012-07-12 13:37:41.713000 +02:00
+  - :path: config/application.rb
+    :cursor_offset: 0
+    :timestamp: 2012-07-12 13:37:41.722000 +02:00
+  - :path: config/boot.rb
+    :cursor_offset: 0
+    :timestamp: 2012-07-12 13:37:42.878000 +02:00
+  - :path: config/database.yml
+    :cursor_offset: 0
+    :timestamp: 2012-07-12 13:37:42.882000 +02:00
+  - :path: config/environment.rb
+    :cursor_offset: 0
+    :timestamp: 2012-07-12 13:37:41.726000 +02:00
+  - :path: test/test_helper.rb
+    :cursor_offset: 0
+    :timestamp: 2012-07-12 13:37:42.988000 +02:00
+  - :path: ruby.rb
+    :cursor_offset: 1090
+    :timestamp: 2012-07-12 19:54:22.062000 +02:00
+  - :path: moj_plik.rb
+    :cursor_offset: 189
+    :timestamp: 2012-07-12 19:56:10.501000 +02:00
 files_to_retain: 0
