@@ -1,4 +1,4 @@
-#encoding: utf-8
+#encoding: UTF-8
 
 def max_min(tab)
 	min=-1
@@ -16,33 +16,69 @@ def max_min(tab)
 	return max,min
 end	
 
-def mixer(string)
+def valid(string)
 
 	s1=string
-
 	il_zam=0
 	il_dom=0
 	il_zam2=0
 	il_dom2=0
-	dl=0
-	dl_max=0
-	dl_min=0
 
 	il_zam=s1.count"{"
 	il_dom=s1.count"}"
 	il_zam2=s1.count"["
 	il_dom2=s1.count"]"
+	
+	if s1.empty?
+		puts "Brak tekstu"
+		return false
+	end
 
 	if il_zam != il_dom
-		wynik="Niezgodnosc w ilosci nawiasow { }"
+		puts "Niezgodnosc w ilosci nawiasow { }"
+		return false
+	end
+	if il_zam2 != il_dom2
+		puts "Niezgodnosc w ilosci nawiasow [ ]"
+		return false
+	end
+	puts il_zam
+	puts il_zam2
+	if il_zam==0 and il_zam2==0 and s1.include? "|"
+		puts "wystapilo | pomimmo bralu nawiasow [] lub {}"
+		return false
+	end
+	if s1.include? "{}"
+		puts "pusty { }"
+		return false
+	end
+	if s1.include? "[]"
+		puts "pusty [ ]"
+		return false
+	end
+	if not s1.slice(/{*[^{]*}*\|.*{/).nil? #(/{[^{]+}+|.+{/
+		puts s1.slice(/{*[^{]*}*\|.*{/)
+		puts "wystapilo | przed po za  {}"
+		return false
+	end
 
-	elsif il_zam2 != il_dom2
-		wynik="Niezgodnosc w ilosci nawiasow [ ]"
-	else
+
+
+	return true
+end
+
+def mixer(s1)
+
+
+
+	dl=0
+	dl_max=0
+	dl_min=0
+
+
 	dl=dl_max=dl_min=s1.size
 
-
-        #                        SPRAWDZANIE \n\n
+        #                        SPRAWDZANIE paragrafow
 	if s1.include? "\n\n"
 		tab_wyc=s1.split("\n\n")
 		tab_wyc.shuffle!  
@@ -120,10 +156,8 @@ def mixer(string)
   			puts "Blad: #{$!}"
 		end
 	end
-
-	end	
-
-
+	wynik=""
+	wynik=s1
 
    return wynik,dl,dl_max,dl_min
 	
