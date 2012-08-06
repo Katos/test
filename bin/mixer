@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'mixer'
+puts Mixer.hi(ARGV[0])
